@@ -11,7 +11,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 
 #read data file
-data = pd.read_csv('/home/payal/Desktop/python/gender/9-9-18/voice.csv')
+data = pd.read_csv('voice.csv')
 print(data.head())  # will give top five rows
 
 data.tail() # give last five rows
@@ -61,7 +61,7 @@ b = data[data['label'] == 'female'].mean()
 print(b)
 
 
-#Distribution of male and female it's another way of box plot #Distrib 
+#Distribution of male and female it's another way of box plot #Distrib
 seaborn.FacetGrid(data, hue="label", height=6) \
    .map(seaborn.kdeplot, "meanfun") \
    .add_legend()
