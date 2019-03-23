@@ -11,10 +11,10 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 
 #read data file
-data = pd.read_csv('voice.csv')
-print(data.head())  # will give top five rows
+data = pd.read_csv("voice.csv")
+#print(data.head())  # will give top five rows
 
-data.tail() # give last five rows
+#data.tail() # give last five rows
 
 data.shape # print shape(row, column)
 
